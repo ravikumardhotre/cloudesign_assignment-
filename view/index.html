@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do </title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    
+
+<h1>To-Do List </h1>
+    <div class="container">
+        <form action="/task" method="post">
+      
+          <label for="Title">Title</label>
+          <input type="text" id="Title" name="title" placeholder="new Task" required="true">
+      
+            <label for="Description">Description</label>
+            <textarea type="text" id="Description" name="description" placeholder="Description" required="true" style="height:200px"></textarea>
+      
+          <label for="status">Status</label>
+          <select id="status" name="status">
+            <option value="pending">pending</option>
+            <option value="inprogress">inprogress</option>
+            <option value="completed">completed</option>
+          </select>
+      
+    
+      
+          <input type="submit"   action="http://localhost:3000/task/"    method="post" value="Add a Task" >
+      
+        </form>
+      </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
